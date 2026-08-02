@@ -1,0 +1,10 @@
+{
+  "Main Block": {
+    "prefix": "main",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    ${0:pass}"
+    ],
+    "description": "Python main block"
+  }
+}

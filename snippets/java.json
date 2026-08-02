@@ -1,0 +1,22 @@
+{
+  "Class with Main": {
+    "prefix": "mainclass",
+    "body": [
+      "public class ${1:${TM_FILENAME_BASE}} {",
+      "    public static void main(String[] args) {",
+      "        ${0:// TODO}",
+      "    }",
+      "}"
+    ],
+    "description": "Java class with main method"
+  },
+  "Main Method": {
+    "prefix": "main",
+    "body": [
+      "public static void main(String[] args) {",
+      "    ${0:// TODO}",
+      "}"
+    ],
+    "description": "Java main method"
+  }
+}

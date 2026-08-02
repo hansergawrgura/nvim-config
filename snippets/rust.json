@@ -1,0 +1,11 @@
+{
+  "Main Function": {
+    "prefix": "main",
+    "body": [
+      "fn main() {",
+      "    ${0:// TODO}",
+      "}"
+    ],
+    "description": "Rust main function"
+  }
+}

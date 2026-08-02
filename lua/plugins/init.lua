@@ -1,5 +1,5 @@
 -- lua/plugins/init.lua
--- Plugin specs entry point. Currently empty.
--- Individual plugin specs go in per-domain files:
---   completion.lua (blink.cmp), lsp/init.lua, telescope.lua, treesitter.lua, git.lua, ui.lua, editor.lua
+-- Plugin specs entry point. Returns empty table.
+-- Specs live in per-domain files (auto-discovered by lazy.nvim):
+--   completion.lua, lsp.lua, snippets.lua
 return {}

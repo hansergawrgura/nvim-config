@@ -11,7 +11,11 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 - `AGENTS.md` with repo overview, conventions, and mandatory workflow reference
 - `docs/WORKFLOW.md` - 8-phase development workflow with self-optimization (§9)
 - `README.md` and `CHANGELOG.md`
-- Decided completion stack: **blink.cmp** (to be added in `lua/plugins/completion.lua`)
+- **blink.cmp** completion (LSP/path/buffer/snippet sources) in `lua/plugins/completion.lua`
+- **mason.nvim + nvim-lspconfig** for 13 LSP servers in `lua/plugins/lsp.lua`
+- **LuaSnip + friendly-snippets** snippet engine in `lua/plugins/snippets.lua`
+- File header auto-insertion (Author/Date/File/Description) on BufNewFile
+- Custom main function snippets for Python/C/C++/Java/Go/Rust + HTML5 boilerplate in `snippets/`
 - `docs/wiki/` Chinese guides: 快速开始, 快捷键, 配置结构
 
 ### Changed

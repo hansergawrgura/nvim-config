@@ -1,0 +1,13 @@
+{
+  "Main Function": {
+    "prefix": "main",
+    "body": [
+      "package main",
+      "",
+      "func main() {",
+      "    ${0:// TODO}",
+      "}"
+    ],
+    "description": "Go main function with package declaration"
+  }
+}

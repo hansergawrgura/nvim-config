@@ -24,7 +24,10 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+local config_root = vim.fn.fnamemodify(debug.getinfo(1, "S").source:sub(2), ":p:h:h:h")
+
 require("lazy").setup("plugins", {
+  lockfile = config_root .. "/lazy-lock.json",
   -- Plugin specs auto-discovered from lua/plugins/
   checker = { enabled = true, frequency = 86400 },
   performance = {

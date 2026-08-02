@@ -20,9 +20,20 @@ nvim-config/
 │   │   ├── autocmds.lua        # Autocommands (named augroups)
 │   │   └── lazy.lua            # lazy.nvim bootstrap + setup
 │   ├── plugins/                # Plugin specs (lazy auto-discovers *.lua)
-│   │   └── init.lua            # Empty entry (return {})
+│   │   ├── init.lua            # Empty entry (return {})
+│   │   ├── completion.lua      # blink.cmp
+│   │   ├── lsp.lua             # mason + lspconfig (13 servers)
+│   │   └── snippets.lua        # LuaSnip + friendly-snippets
 │   └── util/
 │       └── init.lua            # Shared helpers (augroup, map, has)
+├── snippets/                   # Custom VSCode-style snippets
+│   ├── python.json
+│   ├── c.json
+│   ├── cpp.json
+│   ├── java.json
+│   ├── go.json
+│   ├── rust.json
+│   └── html.json
 ├── docs/
 │   ├── WORKFLOW.md             # Development workflow (MANDATORY reading)
 │   └── wiki/                   # User-facing config guides (Chinese)
@@ -66,7 +77,9 @@ nvim-config/
 | Component | Choice | Status |
 |-----------|--------|--------|
 | Plugin manager | lazy.nvim | Implemented in `lua/config/lazy.lua` |
-| Completion | **blink.cmp** | Decided 2026-08-02; to be added in `lua/plugins/completion.lua` |
+| Completion | **blink.cmp** | Implemented in `lua/plugins/completion.lua` |
+| LSP | mason.nvim + nvim-lspconfig | Implemented in `lua/plugins/lsp.lua` (13 servers) |
+| Snippets | LuaSnip + friendly-snippets | Implemented in `lua/plugins/snippets.lua` |
 
 ## Skills
 
