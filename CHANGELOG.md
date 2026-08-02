@@ -12,7 +12,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 - `docs/WORKFLOW.md` - 8-phase development workflow with self-optimization (§9)
 - `README.md` and `CHANGELOG.md`
 - Decided completion stack: **blink.cmp** (to be added in `lua/plugins/completion.lua`)
-- `docs/wiki/` directory with Chinese index (guides written after implementation per §10)
+- `docs/wiki/` Chinese guides: 快速开始, 快捷键, 配置结构
 
 ### Changed
 - `docs/WORKFLOW.md` §10: added Config Wiki Guides maintenance rules to the workflow
