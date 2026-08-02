@@ -15,6 +15,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 - **mason.nvim + nvim-lspconfig** for 13 LSP servers in `lua/plugins/lsp.lua`
 - **LuaSnip + friendly-snippets** snippet engine in `lua/plugins/snippets.lua`
 - **nvim-autopairs** for bracket/quote auto-closing in `lua/plugins/autopairs.lua`
+- **nvim-treesitter** for syntax highlighting and language-aware indentation in `lua/plugins/treesitter.lua`
 - File header auto-insertion (Author/Date/File/Description) on BufNewFile
 - Custom main function snippets for Python/C/C++/Java/Go/Rust + HTML5 boilerplate in `snippets/`
 - `docs/wiki/` Chinese guides: 快速开始, 快捷键, 配置结构
@@ -24,3 +25,4 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed
 - Migrated LSP config to `vim.lsp.config()` / `vim.lsp.enable()` (nvim 0.11+ API), fixing deprecation warning and `:q!` hang
+- Replaced `smartindent` with Treesitter `indent = { enable = true }`, fixing auto-indent on newline
