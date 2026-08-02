@@ -1,5 +1,5 @@
 -- lua/plugins/lsp.lua
--- mason.nvim + nvim-lspconfig: install and configure LSP servers for all mainstream stacks.
+-- mason.nvim + nvim-lspconfig using vim.lsp.config / vim.lsp.enable (nvim 0.11+ API).
 
 local servers = {
   "pyright",       -- Python
@@ -40,17 +40,14 @@ return {
       "Saghen/blink.cmp",
     },
     config = function()
-      local lspconfig = require("lspconfig")
-      local capabilities = vim.lsp.protocol.make_client_capabilities()
-      capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
+      local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-      for _, server in ipairs(servers) do
-        lspconfig[server].setup({
-          capabilities = capabilities,
-        })
-      end
+      vim.lsp.config("*", {
+        capabilities = capabilities,
+      })
 
-      -- Diagnostic signs and display
+      vim.lsp.enable(servers)
+
       vim.diagnostic.config({
         virtual_text = { spacing = 4, prefix = "●" },
         float = { border = "rounded", source = "if_many" },

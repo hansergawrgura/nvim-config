@@ -20,3 +20,6 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Changed
 - `docs/WORKFLOW.md` §10: added Config Wiki Guides maintenance rules to the workflow
+
+### Fixed
+- Migrated LSP config to `vim.lsp.config()` / `vim.lsp.enable()` (nvim 0.11+ API), fixing deprecation warning and `:q!` hang
