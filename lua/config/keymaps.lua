@@ -9,6 +9,11 @@ vim.g.maplocalleader = " "
 -- Clear search highlight
 map("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlight" })
 
+-- Save and quit
+map("n", "<leader>w", "<cmd>write<CR>", { desc = "Save file" })
+map("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quit window" })
+map("n", "<leader>x", "<cmd>x<CR>", { desc = "Save and quit" })
+
 -- Window navigation
 map("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 map("n", "<C-j>", "<C-w>j", { desc = "Move to lower window" })

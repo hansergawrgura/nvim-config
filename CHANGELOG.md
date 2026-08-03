@@ -19,6 +19,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/).
 - File header auto-insertion (Author/Date/File/Description) on BufNewFile
 - Custom main function snippets for Python/C/C++/Java/Go/Rust + HTML5 boilerplate in `snippets/`
 - `docs/wiki/` Chinese guides: 快速开始, 快捷键, 配置结构
+- Leader 快捷键：`<leader>w` 保存、`<leader>q` 退出、`<leader>x` 保存并退出
 
 ### Changed
 - `docs/WORKFLOW.md` §10: added Config Wiki Guides maintenance rules to the workflow
