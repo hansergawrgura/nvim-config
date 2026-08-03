@@ -39,6 +39,8 @@ See [AGENTS.md](AGENTS.md) for the full repo structure and conventions.
 
 Agents working on this repo **must** read [`docs/WORKFLOW.md`](docs/WORKFLOW.md) before making changes.
 
+A standalone, offline-friendly deep-dive tutorial is also available: [`docs/nvim-mastery-guide.html`](docs/nvim-mastery-guide.html). It covers modal editing, Leader mappings, windows/buffers, completion, LSP, HTML workflows, configuration, and a 30-day practice plan.
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
